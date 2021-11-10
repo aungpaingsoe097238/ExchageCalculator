@@ -1,0 +1,267 @@
+:root {
+    --primary: #2CD1EE;
+    --secondary: #707070;
+    --light: #ffffff;
+    --dark: #000000;
+    --hover: #9CA3AF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@font-face {
+    font-family: 'mm';
+    font-weight: normal;
+    src: url('../fonts/MyanmarSagar.ttf');
+}
+
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive , 'mm';
+}
+
+.app{
+    width: 50%; 
+    margin: 50px auto;
+}
+
+.container-one{
+    display: flex;
+}
+
+.container-Lhead{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.logo{
+    margin-left: 5px;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.logo p {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.container-Rhead{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.count{
+    margin-right: 10px;
+}
+
+.count p{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+
+/* Line Through */
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: var(--secondary);
+}
+
+/* Container-Two */
+
+.container-two{
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+}
+
+.container-two label{
+    display: block;
+}
+
+.text-input{
+    width: 25%;
+}
+
+.text-input input{
+    height: 40px;
+    padding: 10px;
+    box-shadow: 1.3px 2.6px 2.6px hsl(0deg 0% 0% / 0.46);
+    border-radius: 5px;
+    text-align: end;
+}
+
+.from,.to{
+    width: 25%;
+}
+
+.from select,.to select{
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 1.3px 2.6px 2.6px hsl(0deg 0% 0% / 0.46);
+    border-radius: 5px;
+    appearance: none;
+}
+
+
+.calcButton{
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+    background-color: var();
+}
+
+.calcButton button{
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color:var(--light);
+    text-transform: uppercase;
+    box-shadow: 1.3px 2.6px 2.6px hsl(0deg 0% 0% / 0.46);
+    text-shadow: 1.3px 2.6px 2.6px hsl(0deg 0% 0% / 0.46);
+    border-radius: 5px;
+}
+
+.calcButton button:hover{
+    background-color: var(--hover);
+    border:1px solid var(--hover);
+}
+
+.calcButton button:active{
+    box-shadow: 5.4px 10.9px 10.9px hsl(0deg 0% 0% / 0.33);
+}
+
+.input{
+    width: 90%;
+}
+
+/* Hide Input Arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Conatainer Three */
+
+.container-three{
+    margin-top: 40px;
+    box-shadow: 1.3px 2.6px 2.6px hsl(0deg 0% 0% / 0.46);
+}
+
+.record-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .record-table td, .record-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* .record-table tr:nth-child(even){background-color: #f2f2f2;}
+   */
+  .record-table tr:hover {
+    color:var(--dark);  
+    background-color: #ddd;}
+  
+  .record-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--primary);
+    color: white;
+  }
+
+  .null-row{
+      text-align: center;
+  }
+
+  .delete{
+      position:fixed;
+      width: 50px;
+      height: 50px;
+      bottom: 50px;
+      right: 110px;
+      border-radius: 50%;
+  }
+
+  @media  screen and (max-width:480px){
+        .app{
+            width: 98%;
+        }
+
+        .container-one{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container-Lhead , .container-Rhead{
+            width: 100%;
+        }
+
+        .container-two{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container-two input{
+            margin: auto;
+            width: 100%;
+        }
+
+        .text-input{
+            width: 100%;
+            margin: 5px;
+        }
+
+        .text-input input{
+            padding: 25px;
+        }
+
+
+        .from , .to{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 5px;
+        }
+
+        .input{
+            width: 100%;
+        }
+
+        .calcButton{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            height: 50px;
+            padding:5px;
+        }
+
+        .calcButton button{
+            height: 50px;
+        }
+
+        .container-three{
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+  }
