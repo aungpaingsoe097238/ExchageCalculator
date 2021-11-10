@@ -7,7 +7,11 @@ let changemood = document.getElementById('changemood');
 
 
 let output = data.rates;   
-// console.log(output);
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+  .then(response => response.json())
+  .then(data => console.log(data));
+
 
 function createOption(selected,data,value){
     let element = document.createElement('option');
