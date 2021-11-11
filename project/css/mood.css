@@ -10,8 +10,8 @@
     border: none;
     background: var(--dark);
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 10px;
+    right: 10px;
 }
 
 .mode-change .fas{
@@ -20,8 +20,22 @@
 
 body.night-mode{
     transition: 0.5s;
-    background: #19191a;
+    background: var(--night-secondary-soft);
 }
+
+.night-mode .header{
+    color: white;
+}
+
+.night-mode .container-one{
+    background-color: var(--night-secondary-soft);
+}
+
+.night-mode .container-two{
+    background-color: var(--night-secondary-soft);
+}
+
+
 .night-mode tr{
     background-color: var(--night-secondary-soft);
 }
@@ -34,6 +48,11 @@ body.night-mode{
 .night-mode td{
     color: var(--night-secondary);
 }
+.night-mode td:hover{
+    color:#19191a;
+}
+
+
 .night-mode input,.night-mode select{
     color: var(--night-secondary);
     background: var(--night-secondary-soft);
@@ -48,4 +67,17 @@ body.night-mode{
 
 .night-mode label{
     color: white;
+}
+
+@media screen and (width:480px){
+    .mode-change{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        background: var(--dark);
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
 }

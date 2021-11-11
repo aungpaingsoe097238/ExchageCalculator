@@ -26,8 +26,6 @@ function ToNum(a){
 }
 
 for(x in output){
-    // console.log(x);
-    // console.log(output[x]);
     createOption(from,x,output[x]);
     createOption(to,x,output[x]);
 }

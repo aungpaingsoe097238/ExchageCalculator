@@ -35,77 +35,84 @@
 
 <body>
 
-    <div class="app animate__animated animate__slideInDown">
+    <div class="center">
 
-        <!-- Container One -->
-        <div class="container-one">
-            <div class="container-Lhead">
-                <div class="logo">
-                    <img src="img/logo.png" alt="">
-                </div>
-                <div class="logo">
-                    <p>MMEx</p>
-                </div>
-            </div>
-            <div class="container-Rhead">
-                <div class="count">
-                    <p id="result">0.00</p>
-                </div>
-            </div>
+        <div class="header animate__animated animate__slideInDown">လုပ်ငမ်းတိုင်းအတွက်မရှီမဖြစ် <p>Exchange Service</p>
         </div>
 
-        <!-- Line -->
-        <div class="line"></div>
-        <!-- Line -->
+        <div class="app animate__animated animate__slideInDown">
 
-        <!-- Container Two -->
-        <form id="form" class="container-two">
-            <div class="text-input">
-                <label for="">Input</label>
-                <input type="number" name="" placeholder="0.00" class="input" id="input" min="1" required autofocus>
+            <!-- Container One -->
+            <div class="container-one sticky">
+                <div class="container-Lhead">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="logo">
+                        <p>MMEx</p>
+                    </div>
+                </div>
+                <div class="container-Rhead">
+                    <div class="count">
+                        <p id="result">0.00</p>
+                    </div>
+                </div>
             </div>
-            <div class="from">
-                <label for="">From</label>
-                <select name="" class="input" id="from" required>
-                    <option value="" selected>Select Currency</option>
-                </select>
-            </div>
-            <div class="to">
-                <label for="">To</label>
-                <select name="" class="input" id="to" required></select>
-            </div>
-            <div class="calcButton">
-                <button id="calcButton" class="input">Calculate</button>
-            </div>
-        </form>
 
-        <!-- Container Three -->
-        <div class="container-three">
-            <table class="record-table">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>From</th>
-                        <th>To</th>
-                        <th>Result</th>
-                    </tr>
-                </thead>
-                <tbody id="recordtable">
-                    <tr id="tr">
-                    </tr>
-                </tbody>
-            </table>
+            <!-- Line -->
+            <div class="line sticky-one"></div>
+            <!-- Line -->
+
+            <!-- Container Two -->
+            <form id="form" class="container-two sticky-two">
+                <div class="text-input">
+                    <label for="">Input</label>
+                    <input type="number" name="" placeholder="0.00" class="input" id="input" min="1" required autofocus>
+                </div>
+                <div class="from">
+                    <label for="">From</label>
+                    <select name="" class="input" id="from" required>
+                        <option value="" selected>Select Currency</option>
+                    </select>
+                </div>
+                <div class="to">
+                    <label for="">To</label>
+                    <select name="" class="input" id="to" required></select>
+                </div>
+                <div class="calcButton">
+                    <button id="calcButton" class="input">Calculate</button>
+                </div>
+            </form>
+
+            <!-- Container Three -->
+            <div class="container-three">
+                <table class="record-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recordtable">
+                        <tr id="tr">
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
+
+        <button class="mode-change animate__animated animate__slideInUp" onclick="changeMode()">
+            <i class="fas fa-moon" id="modeIcon"></i>
+        </button>
+
+        <button class="delete animate__animated animate__slideInUp" onclick="remove()">
+            <i class="fas fa-trash" id="modeIcon"></i>
+        </button>
 
     </div>
-
-    <button class="mode-change animate__animated animate__slideInUp" onclick="changeMode()">
-        <i class="fas fa-moon" id="modeIcon"></i>
-    </button>
-
-    <button class="delete animate__animated animate__slideInUp" onclick="remove()" >
-        <i class="fas fa-trash" id="modeIcon"></i>
-    </button>
 
     <script src="js/cbm.js"></script>
     <script src="js/app.js"></script>

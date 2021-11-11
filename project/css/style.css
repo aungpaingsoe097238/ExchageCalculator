@@ -21,13 +21,24 @@
     font-family: 'Lobster', cursive , 'mm';
 }
 
+.header{
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .app{
     width: 50%; 
     margin: 50px auto;
+
 }
 
 .container-one{
     display: flex;
+    background-color: var(--light);
+
 }
 
 .container-Lhead{
@@ -56,6 +67,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 50%;
+
 }
 
 .count{
@@ -82,6 +94,7 @@
     width: 100%;
     display: flex;
     margin-top: 25px;
+    background-color: var(--light);
 }
 
 .container-two label{
@@ -193,13 +206,35 @@ input::-webkit-inner-spin-button {
       width: 50px;
       height: 50px;
       bottom: 50px;
-      right: 110px;
+      bottom: 10px;
+      right: 70px;
       border-radius: 50%;
   }
+
+  .sticky{
+      position:sticky;
+      top: 0;
+  }
+
+  .sticky-one{
+    position:sticky;
+    top: 50px;
+    }
+
+    .sticky-two{
+        position:sticky;
+        top: 55px;
+    }
+
+
 
   @media  screen and (max-width:480px){
         .app{
             width: 98%;
+        }
+
+        .header{
+            width: 100%;
         }
 
         .container-one{
@@ -264,4 +299,19 @@ input::-webkit-inner-spin-button {
             margin-top: 10px;
         }
 
+        .delete{
+            bottom: 10px;
+            right: 70px;
+        }
+
+        .mode-change{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            background: var(--dark);
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
   }
